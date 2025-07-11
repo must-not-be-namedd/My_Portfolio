@@ -73,11 +73,11 @@ export function Hackathons() {
   };
 
   return (
-    <section id="hackathons" className="py-20 bg-gray-50">
+    <section id="hackathons" className="py-20 bg-muted/20">
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-black mb-6">Hackathons</h2>
-          <p className="text-xl text-gray-600">Competitive programming and innovation challenges</p>
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Hackathons</h2>
+          <p className="text-xl text-muted-foreground">Competitive programming and innovation challenges</p>
         </AnimatedSection>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -85,14 +85,14 @@ export function Hackathons() {
             <AnimatedSection key={hackathon.title} delay={index * 0.1}>
               <motion.div
                 whileHover={{ y: -4 }}
-                className="bg-white rounded-2xl p-8 hover-lift shadow-sm"
+                className="bg-card rounded-2xl p-8 hover-lift shadow-sm border border-border glow-effect card-shine neon-border"
               >
                 <div className="text-center">
                   <div className={`w-16 h-16 bg-${hackathon.badgeColor}-100 rounded-full flex items-center justify-center mx-auto mb-6`}>
                     <hackathon.icon className={`w-8 h-8 ${getIconColor(hackathon.badgeColor)}`} />
                   </div>
-                  <h3 className="text-xl font-semibold text-black mb-2">{hackathon.title}</h3>
-                  <p className="text-gray-600 mb-4 text-lg">{hackathon.year}</p>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">{hackathon.title}</h3>
+                  <p className="text-muted-foreground mb-4 text-lg">{hackathon.year}</p>
                   <div className={`inline-flex items-center px-4 py-2 ${getBadgeColor(hackathon.badgeColor)} rounded-full text-sm font-medium`}>
                     {hackathon.badge}
                   </div>

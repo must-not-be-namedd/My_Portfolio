@@ -86,13 +86,13 @@ export function Skills() {
   };
 
   return (
-    <section id="skills" className="py-20 bg-gray-50">
+    <section id="skills" className="py-20 bg-muted/20">
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-black mb-6 text-balance">
-            From algorithms to full-stack applications, I love building solutions for real problems.
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
+            From algorithms to full-stack applications, I engineer solutions for complex challenges.
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">My technical stack</p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">My technical expertise</p>
         </AnimatedSection>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -100,13 +100,13 @@ export function Skills() {
             <AnimatedSection key={skill.title} delay={index * 0.1}>
               <motion.div
                 whileHover={{ y: -8 }}
-                className="bg-white rounded-xl p-8 hover-lift shadow-sm"
+                className="bg-card rounded-xl p-8 hover-lift shadow-sm border border-border glow-effect card-shine neon-border"
               >
                 <div className={`w-16 h-16 ${getColorClasses(skill.color)} rounded-xl flex items-center justify-center mb-6`}>
                   <skill.icon className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-semibold text-black mb-3">{skill.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{skill.description}</p>
+                <h3 className="text-xl font-semibold text-foreground mb-3">{skill.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{skill.description}</p>
               </motion.div>
             </AnimatedSection>
           ))}

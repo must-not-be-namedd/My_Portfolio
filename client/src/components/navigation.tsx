@@ -37,14 +37,14 @@ export function Navigation() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/95 backdrop-blur-md border-b" : "bg-transparent"
+        isScrolled ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-2xl font-bold text-black hover:opacity-70 transition-opacity"
+            className="text-2xl font-bold text-foreground hover:opacity-70 transition-opacity"
           >
             Khushi Nataraj
           </button>
@@ -55,7 +55,7 @@ export function Navigation() {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-gray-600 hover:text-black transition-colors font-medium"
+                className="text-muted-foreground hover:text-foreground transition-colors font-medium"
               >
                 {item.label}
               </button>
@@ -65,7 +65,7 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-gray-600 hover:text-black transition-colors"
+            className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -84,7 +84,7 @@ export function Navigation() {
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-gray-600 hover:text-black transition-colors font-medium text-left"
+                  className="text-muted-foreground hover:text-foreground transition-colors font-medium text-left"
                 >
                   {item.label}
                 </button>

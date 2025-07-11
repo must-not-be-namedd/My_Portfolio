@@ -49,7 +49,7 @@ export function Projects() {
     <section id="projects" className="py-20">
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-black mb-6">Projects</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Projects</h2>
         </AnimatedSection>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -59,7 +59,7 @@ export function Projects() {
                 whileHover={{ y: -8 }}
                 className="group cursor-pointer hover-lift"
               >
-                <div className="relative overflow-hidden rounded-2xl bg-white shadow-lg">
+                <div className="relative overflow-hidden rounded-2xl bg-card shadow-lg border border-border glow-effect card-shine neon-border">
                   <div className="relative h-64 overflow-hidden">
                     <img
                       src={project.image}
@@ -80,12 +80,12 @@ export function Projects() {
                     </div>
                   </div>
                   <div className="p-6">
-                    <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
+                    <p className="text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
                     <div className="flex flex-wrap gap-2">
                       {project.tech.map((tech) => (
                         <span
                           key={tech}
-                          className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
+                          className="px-3 py-1 bg-muted text-muted-foreground rounded-full text-sm"
                         >
                           {tech}
                         </span>
@@ -101,7 +101,7 @@ export function Projects() {
         <AnimatedSection className="text-center">
           <button
             onClick={() => scrollToSection("contact")}
-            className="inline-flex items-center justify-center px-8 py-4 bg-black text-white rounded-full hover:bg-gray-800 transition-colors group"
+            className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-all duration-300 group pulse-glow"
           >
             View all Projects
             <ArrowRight className="ml-2 w-5 h-5 btn-arrow" />

@@ -7,34 +7,34 @@ export function Education() {
     <section id="education" className="py-20">
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-black mb-6">Education</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Education</h2>
         </AnimatedSection>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <AnimatedSection>
             <motion.div
               whileHover={{ y: -4 }}
-              className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 hover-lift"
+              className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 hover-lift border border-border glow-effect card-shine neon-border"
             >
               <div className="flex items-start justify-between mb-6">
                 <div>
-                  <h3 className="text-2xl font-semibold text-black mb-2">Bachelor of Technology</h3>
-                  <p className="text-blue-600 font-medium mb-2">Computer Science Engineering</p>
-                  <p className="text-gray-600 mb-4">BMS College of Engineering, Bangalore</p>
+                  <h3 className="text-2xl font-semibold text-foreground mb-2">Bachelor of Technology</h3>
+                  <p className="text-primary font-medium mb-2">Computer Science Engineering</p>
+                  <p className="text-muted-foreground mb-4">BMS College of Engineering, Bangalore</p>
                   <div className="flex items-center space-x-4">
-                    <div className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-                      Current GPA: 9.9
-                    </div>
-                    <div className="inline-flex items-center px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
+                    <div className="inline-flex items-center px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium">
                       2nd Year
+                    </div>
+                    <div className="inline-flex items-center px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-medium">
+                      In Progress
                     </div>
                   </div>
                 </div>
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm">
-                  <GraduationCap className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center shadow-sm">
+                  <GraduationCap className="w-8 h-8 text-primary" />
                 </div>
               </div>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed">
                 Specializing in Computer Science Engineering with focus on Data Structures, Algorithms, 
                 Object-Oriented Programming, Database Management Systems, and Full Stack Web Development.
               </p>
@@ -44,27 +44,27 @@ export function Education() {
           <AnimatedSection delay={0.2}>
             <motion.div
               whileHover={{ y: -4 }}
-              className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 hover-lift"
+              className="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl p-8 hover-lift border border-border glow-effect card-shine neon-border"
             >
               <div className="flex items-start justify-between mb-6">
                 <div>
-                  <h3 className="text-2xl font-semibold text-black mb-2">Higher Secondary</h3>
-                  <p className="text-green-600 font-medium mb-2">Science Stream</p>
-                  <p className="text-gray-600 mb-4">National Public School, Bangalore</p>
+                  <h3 className="text-2xl font-semibold text-foreground mb-2">Higher Secondary</h3>
+                  <p className="text-primary font-medium mb-2">Science Stream</p>
+                  <p className="text-muted-foreground mb-4">National Public School, Bangalore</p>
                   <div className="flex items-center space-x-4">
-                    <div className="inline-flex items-center px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
+                    <div className="inline-flex items-center px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium">
                       Score: 95%
                     </div>
-                    <div className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+                    <div className="inline-flex items-center px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-medium">
                       2018-2022
                     </div>
                   </div>
                 </div>
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm">
-                  <School className="w-8 h-8 text-green-600" />
+                <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center shadow-sm">
+                  <School className="w-8 h-8 text-primary" />
                 </div>
               </div>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed">
                 Completed 12th grade with 95% marks, demonstrating consistent academic effort and 
                 strong foundation in Physics, Chemistry, Mathematics, and Computer Science.
               </p>
