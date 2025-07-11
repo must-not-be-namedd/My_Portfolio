@@ -59,14 +59,14 @@ export function Contact() {
                   whileHover={{ x: 4 }}
                   className="flex items-center space-x-4"
                 >
-                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center">
+                    <Mail className="w-6 h-6 text-foreground" />
                   </div>
                   <div>
                     <p className="text-muted-foreground">Email</p>
                     <a 
                       href="mailto:khushinataraj28@gmail.com" 
-                      className="text-xl hover:text-primary transition-colors text-foreground"
+                      className="text-xl hover:text-foreground/80 transition-colors text-foreground"
                     >
                       khushinataraj28@gmail.com
                     </a>
@@ -77,8 +77,8 @@ export function Contact() {
                   whileHover={{ x: 4 }}
                   className="flex items-center space-x-4"
                 >
-                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
-                    <Linkedin className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center">
+                    <Linkedin className="w-6 h-6 text-foreground" />
                   </div>
                   <div>
                     <p className="text-muted-foreground">LinkedIn</p>
@@ -86,7 +86,7 @@ export function Contact() {
                       href="https://www.linkedin.com/in/khushi-nataraj-28npk12" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-xl hover:text-primary transition-colors text-foreground"
+                      className="text-xl hover:text-foreground/80 transition-colors text-foreground"
                     >
                       linkedin.com/in/khushi-nataraj-28npk12
                     </a>
@@ -97,7 +97,7 @@ export function Contact() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-            <div className="bg-muted/50 rounded-2xl p-8 backdrop-blur-sm border border-border glow-effect card-shine neon-border">
+            <div className="bg-muted/50 rounded-2xl p-8 backdrop-blur-sm border border-border card-shine subtle-border">
               <h3 className="text-2xl font-bold mb-6 text-foreground">Professional Opportunities</h3>
               <p className="text-muted-foreground leading-relaxed">
                 I'm actively seeking internship opportunities and collaborative projects in software development, 

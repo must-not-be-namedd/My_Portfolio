@@ -73,7 +73,7 @@ export function Hackathons() {
   };
 
   return (
-    <section id="hackathons" className="py-20 bg-muted/20">
+    <section id="hackathons" className="py-20 bg-muted/50">
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Hackathons</h2>
@@ -85,7 +85,7 @@ export function Hackathons() {
             <AnimatedSection key={hackathon.title} delay={index * 0.1}>
               <motion.div
                 whileHover={{ y: -4 }}
-                className="bg-card rounded-2xl p-8 hover-lift shadow-sm border border-border glow-effect card-shine neon-border"
+                className="bg-card rounded-2xl p-8 hover-lift shadow-sm border border-border card-shine subtle-border"
               >
                 <div className="text-center">
                   <div className={`w-16 h-16 bg-${hackathon.badgeColor}-100 rounded-full flex items-center justify-center mx-auto mb-6`}>

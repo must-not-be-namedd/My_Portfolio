@@ -14,15 +14,15 @@ export function Education() {
           <AnimatedSection>
             <motion.div
               whileHover={{ y: -4 }}
-              className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 hover-lift border border-border glow-effect card-shine neon-border"
+              className="bg-gradient-to-br from-muted/50 to-muted/20 rounded-2xl p-8 hover-lift border border-border card-shine subtle-border"
             >
               <div className="flex items-start justify-between mb-6">
                 <div>
                   <h3 className="text-2xl font-semibold text-foreground mb-2">Bachelor of Technology</h3>
-                  <p className="text-primary font-medium mb-2">Computer Science Engineering</p>
+                  <p className="text-foreground font-medium mb-2">Computer Science Engineering</p>
                   <p className="text-muted-foreground mb-4">BMS College of Engineering, Bangalore</p>
                   <div className="flex items-center space-x-4">
-                    <div className="inline-flex items-center px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium">
+                    <div className="inline-flex items-center px-3 py-1 bg-primary text-primary-foreground rounded-full text-sm font-medium">
                       2nd Year
                     </div>
                     <div className="inline-flex items-center px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-medium">
@@ -31,7 +31,7 @@ export function Education() {
                   </div>
                 </div>
                 <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center shadow-sm">
-                  <GraduationCap className="w-8 h-8 text-primary" />
+                  <GraduationCap className="w-8 h-8 text-foreground" />
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed">
@@ -44,15 +44,15 @@ export function Education() {
           <AnimatedSection delay={0.2}>
             <motion.div
               whileHover={{ y: -4 }}
-              className="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl p-8 hover-lift border border-border glow-effect card-shine neon-border"
+              className="bg-gradient-to-br from-muted/50 to-muted/20 rounded-2xl p-8 hover-lift border border-border card-shine subtle-border"
             >
               <div className="flex items-start justify-between mb-6">
                 <div>
                   <h3 className="text-2xl font-semibold text-foreground mb-2">Higher Secondary</h3>
-                  <p className="text-primary font-medium mb-2">Science Stream</p>
+                  <p className="text-foreground font-medium mb-2">Science Stream</p>
                   <p className="text-muted-foreground mb-4">National Public School, Bangalore</p>
                   <div className="flex items-center space-x-4">
-                    <div className="inline-flex items-center px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium">
+                    <div className="inline-flex items-center px-3 py-1 bg-primary text-primary-foreground rounded-full text-sm font-medium">
                       Score: 95%
                     </div>
                     <div className="inline-flex items-center px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-medium">
@@ -61,7 +61,7 @@ export function Education() {
                   </div>
                 </div>
                 <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center shadow-sm">
-                  <School className="w-8 h-8 text-primary" />
+                  <School className="w-8 h-8 text-foreground" />
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed">

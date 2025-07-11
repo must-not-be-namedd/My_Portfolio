@@ -43,7 +43,7 @@ export function Achievements() {
   ];
 
   return (
-    <section id="achievements" className="py-20 bg-muted/20">
+    <section id="achievements" className="py-20 bg-muted/50">
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Achievements</h2>
@@ -54,11 +54,11 @@ export function Achievements() {
             <AnimatedSection key={achievement.label} delay={index * 0.1}>
               <motion.div
                 whileHover={{ y: -8 }}
-                className="bg-card rounded-2xl p-8 hover-lift shadow-sm border border-border glow-effect card-shine neon-border"
+                className="bg-card rounded-2xl p-8 hover-lift shadow-sm border border-border card-shine subtle-border"
               >
                 <div className="mb-8">
                   <div className="flex items-center mb-4">
-                    <div className="text-4xl lg:text-5xl font-bold text-foreground gradient-text text-glow">
+                    <div className="text-4xl lg:text-5xl font-bold text-foreground gradient-text text-subtle">
                       {achievement.value}
                     </div>
                     {achievement.unit && (
@@ -77,7 +77,7 @@ export function Achievements() {
                 
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center mr-4">
-                    <achievement.icon className="w-6 h-6 text-primary" />
+                    <achievement.icon className="w-6 h-6 text-foreground" />
                   </div>
                   <div>
                     <div className="font-semibold text-foreground">{achievement.author}</div>

@@ -42,7 +42,7 @@ export function Experience() {
             <AnimatedSection key={experience.title} delay={index * 0.1}>
               <motion.div
                 whileHover={{ y: -4 }}
-                className="bg-card rounded-2xl p-8 hover-lift border border-border glow-effect card-shine neon-border"
+                className="bg-card rounded-2xl p-8 hover-lift border border-border card-shine subtle-border"
               >
                 <div className="flex items-start justify-between mb-6">
                   <div>
@@ -50,7 +50,7 @@ export function Experience() {
                     <p className="text-muted-foreground font-medium">{experience.organization}</p>
                   </div>
                   <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center shadow-sm">
-                    <experience.icon className="w-6 h-6 text-primary" />
+                    <experience.icon className="w-6 h-6 text-foreground" />
                   </div>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">{experience.description}</p>

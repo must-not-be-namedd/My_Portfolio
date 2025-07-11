@@ -86,7 +86,7 @@ export function Skills() {
   };
 
   return (
-    <section id="skills" className="py-20 bg-muted/20">
+    <section id="skills" className="py-20 bg-muted/50">
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
@@ -100,7 +100,7 @@ export function Skills() {
             <AnimatedSection key={skill.title} delay={index * 0.1}>
               <motion.div
                 whileHover={{ y: -8 }}
-                className="bg-card rounded-xl p-8 hover-lift shadow-sm border border-border glow-effect card-shine neon-border"
+                className="bg-card rounded-xl p-8 hover-lift shadow-sm border border-border card-shine subtle-border"
               >
                 <div className={`w-16 h-16 ${getColorClasses(skill.color)} rounded-xl flex items-center justify-center mb-6`}>
                   <skill.icon className="w-8 h-8" />
