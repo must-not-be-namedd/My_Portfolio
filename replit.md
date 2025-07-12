@@ -101,5 +101,15 @@ The application follows a full-stack architecture with a clear separation betwee
 1. **Portfolio Sections**: Hero, Skills, Projects, Achievements, Experience, Education, Contact
 2. **Interactive Navigation**: Smooth scrolling between sections
 3. **Responsive Design**: Optimized for all device sizes
-4. **Contact Form**: Functional contact form with validation
-5. **Professional Presentation**: Clean, modern design showcasing technical competency
+4. **Clickable Projects**: Interactive project cards with live demo and GitHub links
+5. **Professional Presentation**: Subtle grey theme with black and white elements
+6. **Technical Skills Highlighting**: Bold formatting for technical terms in skills descriptions
+
+## Recent Changes (January 2025)
+
+- **Theme Update**: Transformed from dark theme to subtle grey theme with black and white elements
+- **Skills Enhancement**: Added technical term highlighting (TensorFlow, MERN Stack, etc.)
+- **Project Interactivity**: Made project thumbnails clickable with live demo and code links
+- **Content Updates**: Updated skills to include MERN Stack, TypeScript, and removed outdated technologies
+- **Link Integration**: Connected all projects to GitHub repositories with proper naming conventions
+- **BMSCE Placement App**: Updated with live demo link from Replit deployment

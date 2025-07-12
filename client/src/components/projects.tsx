@@ -12,7 +12,7 @@ export function Projects() {
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       tech: ["HTML", "CSS", "JavaScript", "SQL", "MongoDB"],
       liveLink: "https://electronics-rental-demo.vercel.app",
-      githubLink: "https://github.com/must-not-be-namedd/electronics-management"
+      githubLink: "https://github.com/must-not-be-namedd/portable-electronics-management-system"
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ export function Projects() {
       image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       tech: ["Python", "TensorFlow", "LiDAR", "IoT"],
       liveLink: "https://traffic-management-ai.vercel.app",
-      githubLink: "https://github.com/must-not-be-namedd/traffic-management-ai"
+      githubLink: "https://github.com/must-not-be-namedd/intelligent-traffic-management-system"
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ export function Projects() {
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       tech: ["Mobile Development", "AI Integration", "Real-time Features"],
       liveLink: "https://enhanced-whatsapp-demo.vercel.app",
-      githubLink: "https://github.com/must-not-be-namedd/enhanced-whatsapp"
+      githubLink: "https://github.com/must-not-be-namedd/smart-enhanced-whatsapp"
     },
     {
       id: 4,
@@ -41,8 +41,8 @@ export function Projects() {
       description: "Built a customized placement statistics app for college campus to keep track of the most frequently visited companies.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       tech: ["Data Analytics", "Statistics", "Dashboard"],
-      liveLink: "https://placement-stats-dashboard.vercel.app",
-      githubLink: "https://github.com/must-not-be-namedd/placement-statistics"
+      liveLink: "https://my-bms-placement-tracker-khushinataraj-replit.app/",
+      githubLink: "https://github.com/must-not-be-namedd/placement-statistics-app"
     }
   ];
 
