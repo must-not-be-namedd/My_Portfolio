@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { Button } from "./ui/button";
 import { AnimatedSection } from "./ui/animated-section";
+import { Terminal } from "./ui/terminal";
+import { TypingAnimation } from "./ui/typing-animation";
 
 export function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -11,82 +14,119 @@ export function Hero() {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center pt-20 pb-20">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <AnimatedSection className="order-2 lg:order-1">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight gradient-text text-subtle"
-          >
-            Khushi Nataraj
-          </motion.h1>
-          
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed text-balance"
-          >
-            A dedicated Computer Science Engineering student specializing in full-stack development, 
-            artificial intelligence, and software engineering. Passionate about creating innovative solutions 
-            and driving technological advancement through collaborative development.
-          </motion.p>
-
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-4 mb-8"
-          >
-            <button
-              onClick={() => scrollToSection("projects")}
-              className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-all duration-300 group pulse-shadow"
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
+      {/* Code-like background pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-0 left-0 w-full h-full"></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-6 py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Side - Introduction */}
+          <div className="text-left">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="mb-8"
             >
-              Explore my Projects
-              <ArrowRight className="ml-2 w-5 h-5 btn-arrow" />
-            </button>
-          </motion.div>
+              <div className="text-green-400 font-mono text-sm mb-2">
+                <TypingAnimation text="// Welcome to my digital space" speed={30} />
+              </div>
+              <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
+                <span className="text-cyan-400">Hello</span>, I'm{" "}
+                <br />
+                <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                  Khushi Nataraj
+                </span>
+              </h1>
+              <div className="text-lg text-gray-300 mb-8 font-mono">
+                <TypingAnimation 
+                  text="Computer Science Engineering Student" 
+                  speed={50} 
+                  startDelay={2000}
+                />
+              </div>
+              <div className="text-gray-400 font-mono text-sm mb-8">
+                <TypingAnimation 
+                  text="/* Building innovative solutions through code */" 
+                  speed={40} 
+                  startDelay={4000}
+                />
+              </div>
+            </motion.div>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex items-center space-x-6"
-          >
-            <a
-              href="https://www.linkedin.com/in/khushi-nataraj-28npk12"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors group"
-            >
-              <Linkedin className="w-5 h-5" />
-              <span>LinkedIn</span>
-            </a>
-            <a
-              href="mailto:khushinataraj28@gmail.com"
-              className="flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors group"
-            >
-              <Mail className="w-5 h-5" />
-              <span>Email</span>
-            </a>
-          </motion.div>
-        </AnimatedSection>
+            <AnimatedSection delay={0.6}>
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <Button
+                  onClick={() => scrollToSection('projects')}
+                  size="lg"
+                  className="px-8 py-3 text-lg bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 hover-lift"
+                >
+                  View Projects
+                </Button>
+                <Button
+                  onClick={() => scrollToSection('contact')}
+                  variant="outline"
+                  size="lg"
+                  className="px-8 py-3 text-lg border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black hover-lift"
+                >
+                  Contact Me
+                </Button>
+              </div>
+            </AnimatedSection>
 
-        <AnimatedSection delay={0.3} className="order-1 lg:order-2">
+            <AnimatedSection delay={0.9}>
+              <div className="flex gap-6 mb-8">
+                <motion.a
+                  href="https://github.com/must-not-be-namedd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="p-3 bg-gray-800/50 rounded-full border border-gray-700 hover:border-purple-400 transition-all"
+                >
+                  <Github className="w-6 h-6 text-white" />
+                </motion.a>
+                <motion.a
+                  href="https://linkedin.com/in/khushi-nataraj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.1, rotate: -5 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="p-3 bg-gray-800/50 rounded-full border border-gray-700 hover:border-blue-400 transition-all"
+                >
+                  <Linkedin className="w-6 h-6 text-white" />
+                </motion.a>
+                <motion.a
+                  href="mailto:khushinataraj@gmail.com"
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="p-3 bg-gray-800/50 rounded-full border border-gray-700 hover:border-green-400 transition-all"
+                >
+                  <Mail className="w-6 h-6 text-white" />
+                </motion.a>
+              </div>
+            </AnimatedSection>
+          </div>
+
+          {/* Right Side - Terminal */}
+          <AnimatedSection delay={1.0}>
+            <div className="lg:ml-8">
+              <Terminal className="w-full max-w-lg mx-auto lg:mx-0" />
+            </div>
+          </AnimatedSection>
+        </div>
+
+        <AnimatedSection delay={1.5}>
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative"
+            animate={{ y: [0, 10, 0] }}
+            transition={{ repeat: Infinity, duration: 2 }}
+            className="cursor-pointer text-center mt-12"
+            onClick={() => scrollToSection('skills')}
           >
-            <img
-              src="https://images.unsplash.com/photo-1494790108755-2616c898834c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-              alt="Professional portrait of Khushi Nataraj"
-              className="w-full h-96 lg:h-[500px] object-cover rounded-2xl shadow-2xl floating subtle-border"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl" />
+            <div className="text-cyan-400 font-mono text-sm mb-2">scroll down</div>
+            <ArrowDown className="w-8 h-8 text-cyan-400 mx-auto" />
           </motion.div>
         </AnimatedSection>
       </div>
