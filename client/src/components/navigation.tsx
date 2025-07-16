@@ -44,7 +44,7 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-2xl font-bold text-foreground hover:opacity-70 transition-opacity"
+            className="text-2xl font-bold text-white hover:text-purple-400 transition-colors"
           >
             Khushi Nataraj
           </button>

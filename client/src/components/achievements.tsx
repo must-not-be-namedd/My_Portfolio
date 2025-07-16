@@ -7,24 +7,24 @@ export function Achievements() {
   const achievements = [
     {
       id: 1,
-      title: "CGPA: 8.2",
-      description: "Maintained consistent academic performance throughout my engineering program with strong focus on core CS subjects",
+      title: "CGPA: 9.83",
+      description: "Grateful to maintain consistent academic performance throughout my engineering program with focus on core CS subjects",
       year: "2021-2025",
       category: "Academic Excellence",
       color: "text-yellow-400"
     },
     {
       id: 2,
-      title: "Data Structures & Algorithms Master",
-      description: "Strong foundation in DSA with practical implementation experience and problem-solving skills",
+      title: "Data Structures & Algorithms",
+      description: "Continuously learning DSA with practical implementation experience and problem-solving practice",
       year: "2023",
       category: "Technical Proficiency",
       color: "text-green-400"
     },
     {
       id: 3,
-      title: "Full Stack Development Expert",
-      description: "Proficient in both frontend and backend technologies with multiple project deployments",
+      title: "Full Stack Development",
+      description: "Learning both frontend and backend technologies with personal project implementations",
       year: "2024",
       category: "Development Skills",
       color: "text-purple-400"
@@ -32,7 +32,7 @@ export function Achievements() {
     {
       id: 4,
       title: "AI/ML Project Implementation",
-      description: "Successfully developed and deployed machine learning models using TensorFlow and Python",
+      description: "Exploring machine learning concepts and building projects using TensorFlow and Python",
       year: "2024",
       category: "Artificial Intelligence",
       color: "text-orange-400"
@@ -40,7 +40,7 @@ export function Achievements() {
     {
       id: 5,
       title: "Open Source Contributions",
-      description: "Active contributor to open source projects with multiple repositories on GitHub",
+      description: "Contributing to open source projects and sharing code through GitHub repositories",
       year: "2023-2024",
       category: "Community Involvement",
       color: "text-cyan-400"
@@ -48,10 +48,10 @@ export function Achievements() {
     {
       id: 6,
       title: "Leadership & Team Collaboration",
-      description: "Experience leading student projects and collaborative development in academic and personal projects",
+      description: "Learning leadership skills through student projects and collaborative development experiences",
       year: "2022-2024",
       category: "Soft Skills",
-      color: "text-pink-400"
+      color: "text-purple-400"
     }
   ];
 

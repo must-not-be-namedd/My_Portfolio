@@ -41,27 +41,27 @@ export function LeetcodeLeaderboard() {
   return (
     <div className="bg-gray-900 text-white p-6 rounded-lg">
       <div className="flex items-center gap-3 mb-6">
-        <Zap className="w-6 h-6 text-yellow-400" />
-        <h3 className="text-2xl font-bold">Tech Stack Leaderboard</h3>
+        <Zap className="w-6 h-6 text-purple-400" />
+        <h3 className="text-2xl font-bold">Tech Stack Rankings</h3>
         <span className="text-sm text-gray-400">// skills.ranking()</span>
       </div>
       
-      <div className="space-y-3">
+      <div className="space-y-3 max-w-full overflow-x-auto">
         {skills.map((skill, index) => (
           <div
             key={skill.name}
-            className={`flex items-center gap-4 p-3 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-500 ${
+            className={`flex items-center gap-2 sm:gap-4 p-3 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-500 min-w-0 ${
               animate ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
             }`}
             style={{ transitionDelay: `${index * 100}ms` }}
           >
-            <div className="flex items-center gap-3 flex-1">
-              <span className="text-gray-400 text-sm w-8">#{index + 1}</span>
-              {getRankIcon(index)}
-              <div className="flex-1">
-                <div className="flex items-center gap-2 mb-1">
-                  <span className={`font-semibold ${skill.color}`}>{skill.name}</span>
-                  <span className="text-xs text-gray-500 bg-gray-700 px-2 py-1 rounded">
+            <div className="flex items-center gap-2 sm:gap-3 flex-1 min-w-0">
+              <span className="text-gray-400 text-sm w-6 sm:w-8 flex-shrink-0">#{index + 1}</span>
+              <div className="flex-shrink-0">{getRankIcon(index)}</div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-1 flex-wrap">
+                  <span className={`font-semibold ${skill.color} text-sm sm:text-base`}>{skill.name}</span>
+                  <span className="text-xs text-gray-500 bg-gray-700 px-2 py-1 rounded flex-shrink-0">
                     {skill.category}
                   </span>
                 </div>
@@ -82,9 +82,8 @@ export function LeetcodeLeaderboard() {
                   />
                 </div>
               </div>
-              <div className="text-right">
-                <div className="text-sm font-bold">{skill.level}%</div>
-                <div className="text-xs text-gray-400">{skill.experience} XP</div>
+              <div className="text-right flex-shrink-0">
+                <div className="text-xs sm:text-sm text-gray-400">{skill.experience} XP</div>
               </div>
             </div>
           </div>

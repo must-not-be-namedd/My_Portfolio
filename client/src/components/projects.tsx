@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { AnimatedSection } from "./ui/animated-section";
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, ExternalLink, Github, Folder, Play, Code2, Database, Smartphone, TrendingUp } from "lucide-react";
+import { TypingAnimation } from "./ui/typing-animation";
 
 export function Projects() {
   const projects = [
@@ -9,55 +10,68 @@ export function Projects() {
       title: "Portable Electronics Management System",
       category: "Full Stack Development",
       description: "A comprehensive rental service for electronics and gadgets with seamless browsing via Mobile WiFi HotSpots for hassle-free tech experience.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       tech: ["HTML", "CSS", "JavaScript", "SQL", "MongoDB"],
       liveLink: "https://electronics-rental-demo.vercel.app",
-      githubLink: "https://github.com/must-not-be-namedd/portable-electronics-management-system"
+      githubLink: "https://github.com/must-not-be-namedd/portable-electronics-management-system",
+      icon: Database,
+      gradientFrom: "from-purple-500",
+      gradientTo: "to-pink-500"
     },
     {
       id: 2,
       title: "Intelligent Traffic Management System",
       category: "AI & Machine Learning",
       description: "AI-powered tool using Python libraries like TensorFlow, leveraging LiDAR technology and real-time environmental sensors.",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       tech: ["Python", "TensorFlow", "LiDAR", "IoT"],
       liveLink: "https://traffic-management-ai.vercel.app",
-      githubLink: "https://github.com/must-not-be-namedd/intelligent-traffic-management-system"
+      githubLink: "https://github.com/must-not-be-namedd/intelligent-traffic-management-system",
+      icon: Code2,
+      gradientFrom: "from-green-500",
+      gradientTo: "to-cyan-500"
     },
     {
       id: 3,
       title: "Smart & Enhanced WhatsApp",
       category: "Mobile Development",
       description: "Enhanced WhatsApp with features like meme and image generation, real-time media deletion, meeting scheduler, and anti-ghost features.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       tech: ["Mobile Development", "AI Integration", "Real-time Features"],
       liveLink: "https://enhanced-whatsapp-demo.vercel.app",
-      githubLink: "https://github.com/must-not-be-namedd/smart-enhanced-whatsapp"
+      githubLink: "https://github.com/must-not-be-namedd/smart-enhanced-whatsapp",
+      icon: Smartphone,
+      gradientFrom: "from-blue-500",
+      gradientTo: "to-purple-500"
     },
     {
       id: 4,
       title: "Placement Statistics App",
       category: "Data Analytics",
       description: "Built a customized placement statistics app for college campus to keep track of the most frequently visited companies.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       tech: ["Data Analytics", "Statistics", "Dashboard"],
       liveLink: "https://my-bms-placement-tracker-khushinataraj-replit.app/",
-      githubLink: "https://github.com/must-not-be-namedd/placement-statistics-app"
+      githubLink: "https://github.com/must-not-be-namedd/placement-statistics-app",
+      icon: TrendingUp,
+      gradientFrom: "from-orange-500",
+      gradientTo: "to-red-500"
     }
   ];
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Projects</h2>
+          <div className="text-green-400 font-mono text-sm mb-4">
+            <TypingAnimation text="// projects.showcase()" speed={50} />
+          </div>
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 text-balance">
+            <span className="text-purple-400">My Projects</span>
+          </h2>
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto font-mono">
+            <TypingAnimation 
+              text="Built with passion and modern tech stack" 
+              speed={40}
+              startDelay={1000}
+            />
+          </p>
         </AnimatedSection>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -65,36 +79,95 @@ export function Projects() {
             <AnimatedSection key={project.id} delay={index * 0.1}>
               <motion.div
                 whileHover={{ y: -8 }}
-                className="group cursor-pointer hover-lift"
+                className="group cursor-pointer"
                 onClick={() => window.open(project.liveLink, '_blank')}
               >
-                <div className="relative overflow-hidden rounded-2xl bg-card shadow-lg border border-border card-shine subtle-border">
-                  <div className="relative h-64 overflow-hidden">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                    <div className="absolute bottom-6 left-6 right-6">
-                      <div className="flex items-center justify-between">
-                        <div>
-                          <h3 className="text-xl font-semibold text-white mb-1">{project.title}</h3>
-                          <p className="text-gray-300 text-sm">{project.category}</p>
+                {/* VS Code Window */}
+                <div className="bg-gray-800 rounded-lg shadow-2xl overflow-hidden border border-gray-700">
+                  {/* VS Code Header */}
+                  <div className="bg-gray-700 px-4 py-3 flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                      <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                      <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                    </div>
+                    <div className="flex items-center gap-2 text-gray-300 text-sm">
+                      <Folder className="w-4 h-4" />
+                      <span>{project.title.toLowerCase().replace(/\s+/g, '-')}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          window.open(project.liveLink, '_blank');
+                        }}
+                        className="text-gray-400 hover:text-white transition-colors"
+                      >
+                        <Play className="w-4 h-4" />
+                      </button>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          window.open(project.githubLink, '_blank');
+                        }}
+                        className="text-gray-400 hover:text-white transition-colors"
+                      >
+                        <Github className="w-4 h-4" />
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* File Explorer */}
+                  <div className="bg-gray-750 px-4 py-2 border-b border-gray-600">
+                    <div className="flex items-center gap-2 text-gray-300 text-sm">
+                      <span className="text-gray-500">📁</span>
+                      <span>src</span>
+                      <span className="text-gray-500">/</span>
+                      <span className="text-purple-400">components</span>
+                      <span className="text-gray-500">/</span>
+                      <span className="text-yellow-400">main.tsx</span>
+                    </div>
+                  </div>
+
+                  {/* Innovative Project Thumbnail */}
+                  <div className="relative h-64 bg-gray-900 overflow-hidden">
+                    <div className={`absolute inset-0 bg-gradient-to-br ${project.gradientFrom} ${project.gradientTo} opacity-20`} />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="mb-4 relative">
+                          <div className={`w-24 h-24 rounded-2xl bg-gradient-to-br ${project.gradientFrom} ${project.gradientTo} flex items-center justify-center mx-auto shadow-2xl`}>
+                            <project.icon className="w-12 h-12 text-white" />
+                          </div>
+                          <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                            <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
+                          </div>
                         </div>
-                        <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                          <ExternalLink className="w-5 h-5 text-white" />
-                        </div>
+                        <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
+                        <p className="text-purple-400 text-sm font-mono">{project.category}</p>
+                      </div>
+                    </div>
+                    
+                    {/* Code Lines Effect */}
+                    <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-4 font-mono text-xs">
+                      <div className="flex items-center gap-2 text-green-400">
+                        <span className="text-gray-500">1</span>
+                        <span className="text-blue-400">export</span>
+                        <span className="text-yellow-400">default</span>
+                        <span className="text-white">function</span>
+                        <span className="text-green-400">{project.title.replace(/\s+/g, '')}()</span>
+                        <span className="text-white">{"{"}</span>
                       </div>
                     </div>
                   </div>
+
+                  {/* Project Details */}
                   <div className="p-6">
-                    <p className="text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
+                    <p className="text-gray-300 mb-4 leading-relaxed">{project.description}</p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.tech.map((tech) => (
                         <span
                           key={tech}
-                          className="px-3 py-1 bg-muted text-muted-foreground rounded-full text-sm"
+                          className="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm border border-gray-600"
                         >
                           {tech}
                         </span>
@@ -106,7 +179,7 @@ export function Projects() {
                           e.stopPropagation();
                           window.open(project.liveLink, '_blank');
                         }}
-                        className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm"
+                        className="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors text-sm"
                       >
                         <ExternalLink className="w-4 h-4" />
                         Live Demo
@@ -116,7 +189,7 @@ export function Projects() {
                           e.stopPropagation();
                           window.open(project.githubLink, '_blank');
                         }}
-                        className="flex items-center gap-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/90 transition-colors text-sm"
+                        className="flex items-center gap-2 px-4 py-2 bg-gray-700 text-gray-300 rounded-lg hover:bg-gray-600 transition-colors text-sm"
                       >
                         <Github className="w-4 h-4" />
                         Code

@@ -37,15 +37,31 @@ export function Terminal({ className = "" }: TerminalProps) {
   };
 
   return (
-    <div className={`bg-gray-900 text-green-400 p-6 rounded-lg font-mono text-sm ${className}`}>
-      <div className="flex items-center gap-2 mb-4">
+    <div className={`bg-gray-900 text-green-400 p-6 rounded-lg font-mono text-sm relative overflow-hidden ${className}`}>
+      {/* Terminal background with colored lines */}
+      <div className="absolute inset-0 opacity-10">
+        {Array.from({ length: 15 }, (_, i) => (
+          <div
+            key={i}
+            className={`h-px mb-4 animate-pulse ${
+              i % 4 === 0 ? 'bg-cyan-400' :
+              i % 4 === 1 ? 'bg-purple-400' :
+              i % 4 === 2 ? 'bg-green-400' :
+              'bg-yellow-400'
+            }`}
+            style={{ animationDelay: `${i * 0.2}s` }}
+          />
+        ))}
+      </div>
+      
+      <div className="flex items-center gap-2 mb-4 relative z-10">
         <div className="w-3 h-3 bg-red-500 rounded-full"></div>
         <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
         <div className="w-3 h-3 bg-green-500 rounded-full"></div>
         <span className="text-gray-400 text-xs ml-2">terminal</span>
       </div>
       
-      <div className="space-y-2">
+      <div className="space-y-2 relative z-10">
         {steps.map((step, index) => (
           <div key={index} className="flex items-center">
             {index <= currentStep && (

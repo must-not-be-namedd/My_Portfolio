@@ -23,7 +23,7 @@ export function Skills() {
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-12 items-start">
           <AnimatedSection delay={0.5}>
             <LeetcodeLeaderboard />
           </AnimatedSection>
