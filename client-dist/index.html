@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khushi Nataraj - Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <!-- Navigation -->
+    <nav id="navigation" class="nav-container">
+      <div class="nav-content">
+        <button id="nav-logo" class="nav-logo">Khushi Nataraj</button>
+        <div class="nav-desktop">
+          <button class="nav-item" data-section="hero">Home</button>
+          <button class="nav-item" data-section="skills">Skills</button>
+          <button class="nav-item" data-section="projects">Projects</button>
+          <button class="nav-item" data-section="achievements">Achievements</button>
+          <button class="nav-item" data-section="experience">Experience</button>
+          <button class="nav-item" data-section="contact">Contact</button>
+        </div>
+        <button id="mobile-menu-btn" class="mobile-menu-btn">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+      <div id="mobile-menu" class="mobile-menu">
+        <button class="mobile-nav-item" data-section="hero">Home</button>
+        <button class="mobile-nav-item" data-section="skills">Skills</button>
+        <button class="mobile-nav-item" data-section="projects">Projects</button>
+        <button class="mobile-nav-item" data-section="achievements">Achievements</button>
+        <button class="mobile-nav-item" data-section="experience">Experience</button>
+        <button class="mobile-nav-item" data-section="contact">Contact</button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="typing-container">
+            <span class="prompt">$ </span>
+            <span id="hero-typing" class="typing-text"></span>
+            <span class="cursor">|</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="text-white">Hello, I'm </span>
+            <span class="text-gradient">Khushi Nataraj</span>
+          </h1>
+          <p class="hero-subtitle">
+            <span id="hero-subtitle-typing" class="typing-text"></span>
+          </p>
+          <div class="hero-buttons">
+            <button class="btn-primary" data-section="projects">View Projects</button>
+            <button class="btn-secondary" data-section="contact">Get In Touch</button>
+          </div>
+        </div>
+        <div class="hero-terminal">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+              </div>
+              <div class="terminal-title">terminal</div>
+            </div>
+            <div class="terminal-background">
+              <div class="colored-line cyan"></div>
+              <div class="colored-line purple"></div>
+              <div class="colored-line green"></div>
+              <div class="colored-line yellow"></div>
+              <div class="colored-line cyan"></div>
+              <div class="colored-line purple"></div>
+              <div class="colored-line green"></div>
+              <div class="colored-line yellow"></div>
+              <div class="colored-line cyan"></div>
+              <div class="colored-line purple"></div>
+              <div class="colored-line green"></div>
+              <div class="colored-line yellow"></div>
+              <div class="colored-line cyan"></div>
+              <div class="colored-line purple"></div>
+              <div class="colored-line green"></div>
+            </div>
+            <div class="terminal-content">
+              <div id="terminal-lines" class="terminal-lines"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="section-content">
+        <div class="section-header">
+          <div class="typing-container">
+            <span id="skills-typing" class="typing-text green"></span>
+          </div>
+          <h2 class="section-title">
+            <span class="text-cyan">My Tech Stack</span>
+          </h2>
+          <p class="section-subtitle">
+            <span id="skills-subtitle-typing" class="typing-text"></span>
+          </p>
+        </div>
+        <div class="skills-content">
+          <div class="tech-stack-rankings">
+            <div class="rankings-header">
+              <div class="rankings-icon">⚡</div>
+              <h3 class="rankings-title">Tech Stack Rankings</h3>
+              <span class="rankings-comment">// skills.ranking()</span>
+            </div>
+            <div id="tech-stack-list" class="tech-stack-list"></div>
+            <div class="total-experience">
+              <span class="experience-icon">💻</span>
+              <span class="experience-text">// Total Experience: <span id="total-xp">22,650</span> XP</span>
+            </div>
+          </div>
+          <div class="quick-stats">
+            <div class="stats-header">
+              <span class="stats-icon">⚡</span>
+              <h3 class="stats-title">Quick Stats</h3>
+            </div>
+            <div class="stats-list">
+              <div class="stat-item">
+                <span class="stat-label">Languages Mastered</span>
+                <span class="stat-value cyan">4+</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Projects Completed</span>
+                <span class="stat-value green">15+</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Tech Stack Diversity</span>
+                <span class="stat-value purple">Full Stack</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Learning Mode</span>
+                <span class="stat-value yellow pulse">Active</span>
+              </div>
+            </div>
+            <div class="console-log">
+              <span class="console-keyword">console.log(</span>
+              <span class="console-string">"Always learning, always growing!"</span>
+              <span class="console-keyword">);</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="section-content">
+        <div class="section-header">
+          <div class="typing-container">
+            <span id="projects-typing" class="typing-text green"></span>
+          </div>
+          <h2 class="section-title">
+            <span class="text-purple">My Projects</span>
+          </h2>
+          <p class="section-subtitle">
+            <span id="projects-subtitle-typing" class="typing-text"></span>
+          </p>
+        </div>
+        <div id="projects-grid" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section">
+      <div class="section-content">
+        <div class="section-header">
+          <div class="typing-container">
+            <span id="achievements-typing" class="typing-text green"></span>
+          </div>
+          <h2 class="section-title">
+            <span class="text-cyan">My Journey</span> So Far
+          </h2>
+          <p class="section-subtitle">
+            <span id="achievements-subtitle-typing" class="typing-text"></span>
+          </p>
+        </div>
+        <div id="achievements-grid" class="achievements-grid"></div>
+        <div class="motivation-code">
+          <div class="code-block">
+            <span class="code-keyword">if (</span>
+            <span class="code-variable">hardWork</span>
+            <span class="code-keyword"> && </span>
+            <span class="code-variable">passion</span>
+            <span class="code-keyword">) {</span>
+            <br />
+            <span class="code-indent code-return">return</span>
+            <span class="code-string"> 'Success'</span>
+            <span class="code-white">;</span>
+            <br />
+            <span class="code-keyword">}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="section-content">
+        <div class="section-header">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle">My professional journey and learning path</p>
+        </div>
+        <div class="experience-timeline">
+          <div class="experience-item">
+            <div class="experience-date">2021 - Present</div>
+            <div class="experience-content">
+              <h3 class="experience-title">Computer Science Engineering Student</h3>
+              <p class="experience-company">BMS College of Engineering</p>
+              <p class="experience-description">
+                Pursuing B.E. in Computer Science Engineering with a focus on full-stack development, 
+                machine learning, and data structures. Maintaining academic excellence while working on 
+                practical projects and contributing to open source.
+              </p>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="experience-date">2023 - 2024</div>
+            <div class="experience-content">
+              <h3 class="experience-title">Full Stack Developer</h3>
+              <p class="experience-company">Personal Projects</p>
+              <p class="experience-description">
+                Developed multiple web applications using modern technologies including React, Node.js, 
+                and MongoDB. Created responsive interfaces and implemented RESTful APIs with focus on 
+                user experience and performance optimization.
+              </p>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="experience-date">2024</div>
+            <div class="experience-content">
+              <h3 class="experience-title">AI/ML Enthusiast</h3>
+              <p class="experience-company">Independent Learning</p>
+              <p class="experience-description">
+                Exploring machine learning concepts and implementing AI solutions using Python and TensorFlow. 
+                Working on projects involving computer vision, natural language processing, and data analysis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-content">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="text-purple">&lt;</span>
+            <span>send_message</span>
+            <span class="text-purple">/&gt;</span>
+          </h2>
+          <p class="section-subtitle">Let's connect and build something amazing together</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-form">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h3 class="contact-info-title">Get in Touch</h3>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <span class="contact-icon">📧</span>
+                <span>khushinataraj.cs23@bmsce.ac.in</span>
+              </div>
+              <div class="contact-method">
+                <span class="contact-icon">💼</span>
+                <span>LinkedIn: /in/khushi-nataraj</span>
+              </div>
+              <div class="contact-method">
+                <span class="contact-icon">🐙</span>
+                <span>GitHub: /must-not-be-namedd</span>
+              </div>
+              <div class="contact-method">
+                <span class="contact-icon">🌍</span>
+                <span>Bangalore, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Khushi Nataraj. Built with passion and modern web technologies.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
