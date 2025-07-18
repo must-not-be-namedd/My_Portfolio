@@ -83,7 +83,7 @@ const achievementsData = [
     id: 1,
     title: "CGPA: 9.83",
     description: "Grateful to maintain consistent academic performance throughout my engineering program with focus on core CS subjects",
-    year: "2021-2025",
+    year: "",
     category: "Academic Excellence",
     color: "text-yellow",
     icon: "🎓"
@@ -92,7 +92,7 @@ const achievementsData = [
     id: 2,
     title: "Data Structures & Algorithms",
     description: "Continuously learning DSA with practical implementation experience and problem-solving practice",
-    year: "2023",
+    year: "",
     category: "Technical Ability - Well versed",
     color: "text-green",
     icon: "🧮"
@@ -101,7 +101,7 @@ const achievementsData = [
     id: 3,
     title: "Full Stack Development",
     description: "Learning both frontend and backend technologies with personal project implementations",
-    year: "2024",
+    year: "",
     category: "Development Skills - Well versed",
     color: "text-purple",
     icon: "💻"
@@ -110,8 +110,8 @@ const achievementsData = [
     id: 4,
     title: "AI/ML Project Implementation",
     description: "Exploring machine learning concepts and building projects using TensorFlow and Python",
-    year: "2024",
-    category: "Artificial Intelligence - Well versed",
+    year: "",
+    category: "Artificial Intelligence - Apprentice",
     color: "text-orange",
     icon: "🤖"
   },
@@ -119,7 +119,7 @@ const achievementsData = [
     id: 5,
     title: "Open Source Contributions",
     description: "Contributing to open source projects and sharing code through GitHub repositories",
-    year: "2023-2024",
+    year: "",
     category: "Community Involvement",
     color: "text-cyan",
     icon: "🌐"
@@ -128,7 +128,7 @@ const achievementsData = [
     id: 6,
     title: "Leadership & Team Collaboration",
     description: "Learning leadership skills through student projects and collaborative development experiences",
-    year: "2022-2024",
+    year: "",
     category: "Soft Skills",
     color: "text-purple",
     icon: "👥"
@@ -517,7 +517,7 @@ function initAchievementsSection() {
           </div>
           <div class="achievement-meta">
             <h3 class="achievement-title">${achievement.title}</h3>
-            <div class="achievement-year">${achievement.year}</div>
+            ${achievement.year ? `<div class="achievement-year">${achievement.year}</div>` : ''}
           </div>
         </div>
         <p class="achievement-description">${achievement.description}</p>
