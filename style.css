@@ -876,50 +876,187 @@ body {
   padding: 5rem 0;
 }
 
-.experience-timeline {
-  max-width: 800px;
+/* Command Prompt Window */
+.cmd-window {
+  max-width: 900px;
   margin: 0 auto;
+  background: #0c0c0c;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  font-family: 'Courier New', monospace;
+  overflow: hidden;
 }
 
-.experience-item {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+.cmd-header {
+  background: #1f1f1f;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333333;
 }
 
-.experience-item:last-child {
-  border-bottom: none;
+.cmd-controls {
+  display: flex;
+  gap: 8px;
 }
 
-.experience-date {
-  font-size: 0.875rem;
-  color: #8b5cf6;
-  font-weight: 600;
-  text-align: right;
+.cmd-minimize,
+.cmd-maximize,
+.cmd-close {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
-.experience-content {
-  color: #9ca3af;
+.cmd-minimize {
+  background: #ffbd2e;
+  color: #000000;
 }
 
-.experience-title {
-  font-size: 1.25rem;
-  font-weight: 700;
+.cmd-maximize {
+  background: #28ca42;
+  color: #000000;
+}
+
+.cmd-close {
+  background: #ff5f57;
+  color: #000000;
+}
+
+.cmd-title {
+  font-size: 12px;
   color: #ffffff;
-  margin-bottom: 0.5rem;
+  font-weight: normal;
 }
 
-.experience-company {
-  font-size: 1rem;
-  color: #06b6d4;
-  margin-bottom: 1rem;
+.cmd-content {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #ffffff;
 }
 
-.experience-description {
-  line-height: 1.6;
+.cmd-line {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cmd-blank {
+  height: 8px;
+}
+
+.cmd-prompt {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.cmd-command {
+  color: #00ff00;
+}
+
+.cmd-output {
+  margin-left: 0;
+}
+
+.cmd-date {
+  color: #ffff00;
+  font-weight: bold;
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.cmd-type {
+  color: #ff00ff;
+  font-weight: bold;
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.cmd-name {
+  color: #00ffff;
+  font-weight: bold;
+}
+
+.cmd-detail {
+  margin-left: 20px;
+  color: #cccccc;
+}
+
+.cmd-description {
+  color: #cccccc;
+}
+
+.cmd-success {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+.cmd-cursor {
+  color: #ffffff;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Social Buttons */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #ffffff;
+}
+
+.social-btn.linkedin {
+  background: #0077b5;
+  border: 2px solid #0077b5;
+}
+
+.social-btn.linkedin:hover {
+  background: #005885;
+  border-color: #005885;
+  transform: translateY(-2px);
+}
+
+.social-btn.github {
+  background: #333333;
+  border: 2px solid #333333;
+}
+
+.social-btn.github:hover {
+  background: #24292e;
+  border-color: #24292e;
+  transform: translateY(-2px);
+}
+
+.social-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* Contact Section */
@@ -929,51 +1066,9 @@ body {
 }
 
 .contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  display: flex;
+  justify-content: center;
   align-items: start;
-}
-
-.contact-form {
-  background: #2d2d44;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  color: #ffffff;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.75rem;
-  background: #1a1a2e;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 0.5rem;
-  color: #ffffff;
-  font-family: inherit;
-  transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #8b5cf6;
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 120px;
 }
 
 .contact-info {
@@ -981,6 +1076,8 @@ body {
   padding: 2rem;
   border-radius: 0.5rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 600px;
+  width: 100%;
 }
 
 .contact-info-title {
@@ -1004,6 +1101,14 @@ body {
   background: #1a1a2e;
   border-radius: 0.5rem;
   color: #9ca3af;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-method.clickable:hover {
+  background: #3d3d5d;
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
 .contact-icon {
@@ -1096,6 +1201,38 @@ body {
 
   .tech-xp {
     font-size: 0.6875rem;
+  }
+
+  /* Command prompt responsive */
+  .cmd-content {
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  .cmd-date,
+  .cmd-type {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .cmd-name {
+    font-size: 12px;
+  }
+
+  /* Social buttons responsive */
+  .social-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .social-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  /* Contact responsive */
+  .contact-content {
+    padding: 0 1rem;
   }
 }
 

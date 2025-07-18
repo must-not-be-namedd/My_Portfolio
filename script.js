@@ -81,7 +81,7 @@ const achievementsData = [
     title: "Data Structures & Algorithms",
     description: "Continuously learning DSA with practical implementation experience and problem-solving practice",
     year: "2023",
-    category: "Technical Proficiency",
+    category: "Technical Ability - Well versed",
     color: "text-green",
     icon: "🧮"
   },
@@ -90,7 +90,7 @@ const achievementsData = [
     title: "Full Stack Development",
     description: "Learning both frontend and backend technologies with personal project implementations",
     year: "2024",
-    category: "Development Skills",
+    category: "Development Skills - Well versed",
     color: "text-purple",
     icon: "💻"
   },
@@ -99,7 +99,7 @@ const achievementsData = [
     title: "AI/ML Project Implementation",
     description: "Exploring machine learning concepts and building projects using TensorFlow and Python",
     year: "2024",
-    category: "Artificial Intelligence",
+    category: "Artificial Intelligence - Well versed",
     color: "text-orange",
     icon: "🤖"
   },
@@ -206,9 +206,23 @@ function initNavigation() {
   heroButtons.forEach(button => {
     button.addEventListener('click', () => {
       const section = button.dataset.section;
-      scrollToSection(section);
+      if (section) {
+        scrollToSection(section);
+      }
     });
   });
+
+  // Make all buttons functional
+  const viewProjectsBtn = document.querySelector('[data-section="projects"]');
+  const contactBtn = document.querySelector('[data-section="contact"]');
+  
+  if (viewProjectsBtn) {
+    viewProjectsBtn.addEventListener('click', () => scrollToSection('projects'));
+  }
+  
+  if (contactBtn) {
+    contactBtn.addEventListener('click', () => scrollToSection('contact'));
+  }
 }
 
 // Terminal animation
@@ -503,26 +517,11 @@ function initAchievementsSection() {
   }
 }
 
-// Contact form
-function initContactForm() {
-  const contactForm = document.getElementById('contact-form');
-  
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    const formData = new FormData(contactForm);
-    const data = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      message: formData.get('message')
-    };
-    
-    console.log('Form submitted:', data);
-    
-    // Show success message
-    alert('Thank you for your message! I\'ll get back to you soon.');
-    contactForm.reset();
-  });
+// Contact section initialization
+function initContactSection() {
+  // Contact section is now static with social links
+  // All social links are handled by HTML href attributes
+  console.log('Contact section initialized - social links are functional');
 }
 
 // Smooth scrolling for all internal links
@@ -560,7 +559,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSkillsSection();
   initProjectsSection();
   initAchievementsSection();
-  initContactForm();
+  initContactSection();
   initSmoothScrolling();
   initScrollAnimations();
 });
