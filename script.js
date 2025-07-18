@@ -4,65 +4,77 @@
 let currentStep = 0;
 const typingSpeed = 50;
 const techStackData = [
-  { name: "Python", level: 95, experience: 2840, color: "text-yellow", category: "Languages", bgColor: "bg-yellow-400" },
-  { name: "JavaScript", level: 90, experience: 2650, color: "text-yellow", category: "Languages", bgColor: "bg-yellow-400" },
-  { name: "TypeScript", level: 85, experience: 2400, color: "text-blue", category: "Languages", bgColor: "bg-blue-400" },
-  { name: "React", level: 92, experience: 2750, color: "text-cyan", category: "Frontend", bgColor: "bg-cyan-400" },
-  { name: "Node.js", level: 88, experience: 2580, color: "text-green", category: "Backend", bgColor: "bg-green-400" },
-  { name: "TensorFlow", level: 80, experience: 2200, color: "text-orange", category: "AI/ML", bgColor: "bg-orange-400" },
-  { name: "MongoDB", level: 85, experience: 2350, color: "text-green", category: "Database", bgColor: "bg-green-400" },
-  { name: "PostgreSQL", level: 82, experience: 2280, color: "text-blue", category: "Database", bgColor: "bg-blue-400" },
-  { name: "Git/GitHub", level: 90, experience: 2600, color: "text-purple", category: "Tools", bgColor: "bg-purple-400" }
+  { name: "Python", level: 90, experience: 2840, color: "text-yellow", category: "Languages", bgColor: "bg-yellow-400" },
+  { name: "JavaScript", level: 75, experience: 2650, color: "text-yellow", category: "Languages", bgColor: "bg-yellow-400" },
+  { name: "TypeScript", level: 60, experience: 2400, color: "text-blue", category: "Languages", bgColor: "bg-blue-400" },
+  { name: "React", level: 55, experience: 2750, color: "text-cyan", category: "Frontend", bgColor: "bg-cyan-400" },
+  { name: "Node.js", level: 60, experience: 2580, color: "text-green", category: "Backend", bgColor: "bg-green-400" },
+  { name: "TensorFlow", level: 35, experience: 2200, color: "text-orange", category: "AI/ML", bgColor: "bg-orange-400" },
+  { name: "MongoDB", level: 60, experience: 2350, color: "text-green", category: "Database", bgColor: "bg-green-400" },
+  { name: "PostgreSQL", level: 55, experience: 2280, color: "text-blue", category: "Database", bgColor: "bg-blue-400" },
+  { name: "Git/GitHub", level: 60, experience: 2600, color: "text-purple", category: "Tools", bgColor: "bg-purple-400" }
 ];
 
 const projectsData = [
   {
     id: 1,
-    title: "Portable Electronics Management System",
-    category: "Full Stack Development",
-    description: "A comprehensive rental service for electronics and gadgets with seamless browsing via Mobile WiFi HotSpots for hassle-free tech experience.",
-    tech: ["HTML", "CSS", "JavaScript", "SQL", "MongoDB"],
-    liveLink: "https://electronics-rental-demo.vercel.app",
-    githubLink: "https://github.com/must-not-be-namedd/portable-electronics-management-system",
-    icon: "database",
-    gradientFrom: "from-purple-500",
-    gradientTo: "to-pink-500"
-  },
-  {
-    id: 2,
-    title: "Intelligent Traffic Management System",
-    category: "AI & Machine Learning",
-    description: "AI-powered tool using Python libraries like TensorFlow, leveraging LiDAR technology and real-time environmental sensors.",
-    tech: ["Python", "TensorFlow", "LiDAR", "IoT"],
-    liveLink: "https://traffic-management-ai.vercel.app",
-    githubLink: "https://github.com/must-not-be-namedd/intelligent-traffic-management-system",
-    icon: "code",
-    gradientFrom: "from-green-500",
-    gradientTo: "to-cyan-500"
-  },
-  {
-    id: 3,
-    title: "Smart & Enhanced WhatsApp",
-    category: "Mobile Development",
-    description: "Enhanced WhatsApp with features like meme and image generation, real-time media deletion, meeting scheduler, and anti-ghost features.",
-    tech: ["Mobile Development", "AI Integration", "Real-time Features"],
-    liveLink: "https://enhanced-whatsapp-demo.vercel.app",
-    githubLink: "https://github.com/must-not-be-namedd/smart-enhanced-whatsapp",
-    icon: "smartphone",
-    gradientFrom: "from-blue-500",
-    gradientTo: "to-purple-500"
-  },
-  {
-    id: 4,
-    title: "Placement Statistics App",
+    title: "BMSCE Placement Portal",
     category: "Data Analytics",
-    description: "Built a customized placement statistics app for college campus to keep track of the most frequently visited companies.",
+    description: "Built a customized placement statistics app for college campus to keep track of the most frequently visited companies with interactive dashboards.",
     tech: ["Data Analytics", "Statistics", "Dashboard"],
     liveLink: "https://my-bms-placement-tracker-khushinataraj-replit.app/",
     githubLink: "https://github.com/must-not-be-namedd/placement-statistics-app",
     icon: "trending-up",
     gradientFrom: "from-orange-500",
     gradientTo: "to-red-500"
+  },
+  {
+    id: 2,
+    title: "Protocol Website",
+    category: "Web Development",
+    description: "Official website for Protocol Club BMSCE featuring modern design, event management, and member engagement with responsive UI.",
+    tech: ["HTML", "CSS", "JavaScript", "Web Design"],
+    liveLink: "https://protocol-club-bmsce.vercel.app",
+    githubLink: "https://github.com/must-not-be-namedd/protocol-website",
+    icon: "code",
+    gradientFrom: "from-blue-500",
+    gradientTo: "to-purple-500"
+  },
+  {
+    id: 3,
+    title: "Salary Prediction AI/ML",
+    category: "AI & Machine Learning",
+    description: "Machine learning model to predict salary based on experience, skills, and location using TensorFlow and Python data science libraries.",
+    tech: ["Python", "TensorFlow", "Machine Learning", "Data Science"],
+    liveLink: "https://salary-prediction-ai.vercel.app",
+    githubLink: "https://github.com/must-not-be-namedd/salary-prediction-ai-ml",
+    icon: "trending-up",
+    gradientFrom: "from-green-500",
+    gradientTo: "to-cyan-500"
+  },
+  {
+    id: 4,
+    title: "Schrödinger's Chat",
+    category: "Mobile Development",
+    description: "Enhanced WhatsApp with quantum-inspired features like meme generation, real-time media deletion, meeting scheduler, and anti-ghost capabilities.",
+    tech: ["Mobile Development", "AI Integration", "Real-time Features"],
+    liveLink: "https://schrodingers-chat.vercel.app",
+    githubLink: "https://github.com/must-not-be-namedd/schrodingers-chat",
+    icon: "smartphone",
+    gradientFrom: "from-purple-500",
+    gradientTo: "to-pink-500"
+  },
+  {
+    id: 5,
+    title: "Portable Electronics Management",
+    category: "Full Stack Development",
+    description: "Comprehensive rental service for electronics and gadgets with seamless browsing via Mobile WiFi HotSpots for hassle-free tech experience.",
+    tech: ["HTML", "CSS", "JavaScript", "SQL", "MongoDB"],
+    liveLink: "https://electronics-rental-demo.vercel.app",
+    githubLink: "https://github.com/must-not-be-namedd/portable-electronics-management-system",
+    icon: "database",
+    gradientFrom: "from-indigo-500",
+    gradientTo: "to-blue-500"
   }
 ];
 
@@ -328,7 +340,7 @@ function initSkillsSection() {
             <div class="tech-progress-bar ${tech.bgColor}" style="width: 0%"></div>
           </div>
         </div>
-        <div class="tech-xp">${tech.experience} XP</div>
+        <div class="tech-level" style="opacity: 0;">${tech.level}%</div>
       `;
       
       techStackList.appendChild(techItem);
