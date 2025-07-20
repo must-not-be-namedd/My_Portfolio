@@ -608,4 +608,3 @@ const achievementSummary = {
   projects: "MERN stack applications, Schrödinger's Chat-An Enhanced Whatsapp, The Official Protocol Website, BMSCE Placement Portal.",
   values: "Humble, dedicated, and genuine growth"
 };
-export default achievementSummary;
