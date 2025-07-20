@@ -240,11 +240,23 @@ function initNavigation() {
 // Terminal animation
 async function initTerminal() {
   const terminalLines = document.getElementById('terminal-lines');
+  const achievementSummary = {
+    academic: "CGPA 9.83",
+    technical: "DSA, Full Stack, AI/ML, Android/iOS App Dev - continuous learning",
+    projects: "MERN stack applications, Schrödinger's Chat-An Enhanced Whatsapp, The Official Protocol Website, BMSCE Placement Portal.",
+    values: "Humble, dedicated, and genuine growth"
+  };
+
   const steps = [
     { text: "$ whoami", type: "prompt" },
     { text: "khushi-nataraj", type: "output" },
     { text: "$ cat profile.txt", type: "prompt" },
     { text: "Computer Science Engineering Student", type: "output" },
+    { text: "$ cat achievements.js", type: "prompt" },
+    { text: `academic: "${achievementSummary.academic}"`, type: "output" },
+    { text: `technical: "${achievementSummary.technical}"`, type: "output" },
+    { text: `projects: "${achievementSummary.projects}"`, type: "output" },
+    { text: `values: "${achievementSummary.values}"`, type: "output" },
     { text: "$ ls skills/", type: "prompt" },
     { text: "python/ javascript/ react/ tensorflow/ mern-stack/", type: "output" },
     { text: "$ ./start_portfolio.sh", type: "prompt" },
@@ -589,3 +601,11 @@ window.addEventListener('resize', () => {
 window.addEventListener('load', () => {
   document.body.classList.add('loaded');
 });
+
+const achievementSummary = {
+  academic: "CGPA 9.83",
+  technical: "DSA, Full Stack, AI/ML, Android/iOS App Dev - continuous learning",
+  projects: "MERN stack applications, Schrödinger's Chat-An Enhanced Whatsapp, The Official Protocol Website, BMSCE Placement Portal.",
+  values: "Humble, dedicated, and genuine growth"
+};
+export default achievementSummary;
