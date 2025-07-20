@@ -242,8 +242,8 @@ async function initTerminal() {
   const terminalLines = document.getElementById('terminal-lines');
   const achievementSummary = {
     academic: "CGPA 9.83",
-    technical: "DSA, Full Stack, AI/ML, Android/iOS App Dev - continuous learning",
-    projects: "MERN stack applications, Schrödinger's Chat-An Enhanced Whatsapp, The Official Protocol Website, BMSCE Placeemnt Portal.",
+    technical: "DSA, Full Stack, AI/ML ,Android/iOS App Dev- continuous learning",
+    projects: " BMSCE Placement Portal, Schrödinger's Chat-An Enhanced Whatsapp, The Official Protocol Website",
     values: "Humble, dedicated, and genuine growth"
   };
 
@@ -604,7 +604,7 @@ window.addEventListener('load', () => {
 
 const achievementSummary = {
   academic: "CGPA 9.83",
-  technical: "DSA, Full Stack, AI/ML, Android/iOS App Dev - continuous learning",
-  projects: "MERN stack applications, Schrödinger's Chat-An Enhanced Whatsapp, The Official Protocol Website, BMSCE Placeemnt Portal.",
+  technical: "DSA, Full Stack, AI/ML ,Android/iOS App Dev- continuous learning",
+  projects: " BMSCE Placement Portal, Schrödinger's Chat-An Enhanced Whatsapp, The Official Protocol Website",
   values: "Humble, dedicated, and genuine growth"
 };

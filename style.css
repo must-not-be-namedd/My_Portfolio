@@ -1344,23 +1344,24 @@ body {
 }
 
 .netflix-logo-small {
-  color: #e50914;
-  font-size: 2.5rem;
-  font-weight: 900;
-  font-family: 'Arial Black', sans-serif;
   background: #e50914;
   color: white;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-family: 'Netflix Sans', 'Arial Black', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .profile-title {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 400;
   margin-bottom: 4rem;
   font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -1503,7 +1504,7 @@ body {
   }
   
   .profile-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
   }
   
@@ -1539,7 +1540,7 @@ body {
   }
   
   .profile-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 2rem;
   }
   
