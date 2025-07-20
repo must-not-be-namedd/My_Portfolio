@@ -255,8 +255,6 @@ async function initTerminal() {
     { text: "$ cat achievements.js", type: "prompt" },
     { text: `academic: "${achievementSummary.academic}"`, type: "output" },
     { text: `technical: "${achievementSummary.technical}"`, type: "output" },
-    { text: `projects: "${achievementSummary.projects}"`, type: "output" },
-    { text: `values: "${achievementSummary.values}"`, type: "output" },
     { text: "$ ls skills/", type: "prompt" },
     { text: "python/ javascript/ react/ tensorflow/ mern-stack/", type: "output" },
     { text: "$ ./start_portfolio.sh", type: "prompt" },
