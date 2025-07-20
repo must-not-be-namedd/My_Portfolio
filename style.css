@@ -1334,11 +1334,33 @@ body {
   margin: 0 auto;
   text-align: center;
   padding: 2rem;
+  position: relative;
+}
+
+.netflix-header-small {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.netflix-logo-small {
+  color: #e50914;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: 'Arial Black', sans-serif;
+  background: #e50914;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
 }
 
 .profile-title {
   color: #ffffff;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 400;
   margin-bottom: 4rem;
   font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -1427,6 +1449,16 @@ body {
   background: linear-gradient(135deg, #e60023, #bd081c);
 }
 
+.add-avatar {
+  background: #666666;
+  color: #ffffff;
+}
+
+.add-profile .profile-icon {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
 .manage-profiles {
   margin: 3rem 0 2rem 0;
 }
@@ -1459,8 +1491,19 @@ body {
 
 /* Responsive adjustments for Netflix profile hobbies */
 @media (max-width: 768px) {
+  .netflix-header-small {
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .netflix-logo-small {
+    width: 35px;
+    height: 35px;
+    font-size: 2rem;
+  }
+  
   .profile-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 3rem;
   }
   
@@ -1484,8 +1527,19 @@ body {
 }
 
 @media (max-width: 480px) {
+  .netflix-header-small {
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .netflix-logo-small {
+    width: 30px;
+    height: 30px;
+    font-size: 1.8rem;
+  }
+  
   .profile-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
   }
   
