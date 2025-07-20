@@ -308,7 +308,7 @@ function initSkillsSection() {
   const skillsTyping = document.getElementById('skills-typing');
   const skillsSubtitleTyping = document.getElementById('skills-subtitle-typing');
   const techStackList = document.getElementById('tech-stack-list');
-  const totalXp = document.getElementById('total-xp');
+
 
   // Typing animations
   const observer = new IntersectionObserver((entries) => {
@@ -365,7 +365,7 @@ function initSkillsSection() {
     });
 
     // Update total XP
-    totalXp.textContent = totalExperience.toLocaleString();
+
   }
 }
 
