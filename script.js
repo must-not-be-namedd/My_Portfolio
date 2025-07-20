@@ -20,7 +20,7 @@ const projectsData = [
     id: 1,
     title: "BMSCE Placement Portal",
     category: "Full-Stack Analytics Platform",
-    description: "Innovative and the one-and-only placement tracking system with real-time analytics dashboards, company visit statistics, and student placement insights. Built with modern full-stack architecture featuring client-server separation and shared components.",
+    description: "Innovative And The One-And-Only Placement Tracking System With Real-Time Analytics Dashboards, company visit statistics, and student placement insights. Built with modern full-stack architecture featuring client-server separation and shared components.",
     tech: ["Frontend: React/Vite", "Backend: Node.js/Express", "Database: PostgreSQL", "Analytics Dashboard", "Real-time Data"],
     liveLink: "https://my-bms-placement-tracker-khushinataraj-replit.app/",
     githubLink: "https://github.com/must-not-be-namedd/placement-statistics-app",

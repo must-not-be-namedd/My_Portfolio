@@ -1318,3 +1318,171 @@ body {
     align-self: flex-end;
   }
 }
+
+/* Hobbies Section - Netflix Style */
+.hobbies-section {
+  background: linear-gradient(135deg, #141414, #0f0f0f);
+  padding: 5rem 0;
+}
+
+.netflix-container {
+  background: #141414;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.netflix-header {
+  background: #000000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.netflix-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e50914;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.netflix-profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: linear-gradient(135deg, #e50914, #b20710);
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.netflix-content {
+  padding: 2rem;
+}
+
+.netflix-section-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.netflix-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.netflix-card {
+  background: #2f2f2f;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.netflix-card:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.netflix-thumbnail {
+  aspect-ratio: 16/9;
+  background: linear-gradient(135deg, #e50914, #b20710);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.netflix-thumbnail::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.thumbnail-content {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.hobby-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.hobby-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.hobby-subtitle {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.netflix-card-title {
+  padding: 0.75rem;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  background: #2f2f2f;
+}
+
+.netflix-card:hover .netflix-card-title {
+  background: #333333;
+}
+
+.text-red {
+  color: #e50914;
+}
+
+/* Responsive adjustments for Netflix hobbies */
+@media (max-width: 768px) {
+  .netflix-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .netflix-header {
+    padding: 1rem;
+  }
+  
+  .netflix-content {
+    padding: 1rem;
+  }
+  
+  .netflix-section-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .netflix-grid {
+    grid-template-columns: 1fr;
+  }
+}
