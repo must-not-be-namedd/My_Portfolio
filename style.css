@@ -1344,7 +1344,7 @@ body {
 }
 
 .netflix-logo-small {
-  background: #e50914;
+  background: linear-gradient(135deg, #e50914 0%, #b8070f 50%, #8b0000 100%);
   color: white;
   width: 40px;
   height: 56px;
@@ -1352,13 +1352,17 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  font-family: 'Bebas Neue', 'Arial Black', sans-serif;
-  font-size: 2.8rem;
+  font-family: 'Arial Black', sans-serif;
+  font-size: 2.6rem;
   font-weight: 900;
-  letter-spacing: -1px;
-  font-style: italic;
-  transform: skewX(-8deg);
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  letter-spacing: -2px;
+  text-shadow: 2px 2px 0px #8b0000, 4px 4px 8px rgba(0,0,0,0.6);
+  box-shadow: 
+    0 4px 8px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.2),
+    inset 0 -1px 0 rgba(0,0,0,0.2);
+  position: relative;
+  transform: perspective(200px) rotateY(-15deg) rotateX(5deg);
 }
 
 .profile-title {
@@ -1502,7 +1506,8 @@ body {
   .netflix-logo-small {
     width: 35px;
     height: 48px;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+    transform: perspective(150px) rotateY(-12deg) rotateX(3deg);
   }
   
   .profile-title {
@@ -1538,7 +1543,8 @@ body {
   .netflix-logo-small {
     width: 30px;
     height: 42px;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    transform: perspective(120px) rotateY(-10deg) rotateX(2deg);
   }
   
   .profile-title {
