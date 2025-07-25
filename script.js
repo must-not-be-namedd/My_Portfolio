@@ -47,7 +47,7 @@ const projectsData = [
     description: "Cutting-edge AI-powered salary prediction engine using sophisticated machine learning algorithms to analyze experience, skills, location, and market trends. Built with TensorFlow for enterprise-grade accuracy and insights.",
     tech: ["Advanced Python", "TensorFlow", "Machine Learning", "Data Science", "Predictive Analytics"],
     liveLink: "https://www.linkedin.com/posts/khushi-nataraj-28npk12_streamlit-pythonfordatascience-interactiveapps-activity-7304370947954749440-wyjW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEarnC8BRSG7CqHFtPGH7Bs59d5AU_lnJ-M",
-    githubLink: "https://github.com/must-not-be-namedd/salary-prediction-ml",
+    githubLink: "https://github.com/must-not-be-namedd/ml_SalaryPrediction",
     icon: "trending-up",
     gradientFrom: "from-green-500",
     gradientTo: "to-cyan-500"
