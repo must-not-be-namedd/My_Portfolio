@@ -18,7 +18,7 @@ const techStackData = [
 const projectsData = [
   {
     id: 1,
-    title: "BMSCE Placement Portal",
+    title: "CampusPlacify, a Custom Web/Mobile Application designed to streamline campus placement tracking and student readiness",
     category: "Full-Stack Analytics Platform",
     description: "Innovative And The One-And-Only Placement Tracking System With Real-Time Analytics Dashboards, company visit statistics, and student placement insights. Built with modern full-stack architecture featuring client-server separation and shared components.",
     tech: ["Frontend: React/Vite", "Backend: Node.js/Express", "Database: PostgreSQL", "Analytics Dashboard", "Real-time Data"],
@@ -42,7 +42,7 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Salary Prediction AI/ML",
+    title: "PayScale AI – Intelligent Salary Forecasting Engine Using Machine Learning and Market Insights",
     category: "Advanced Machine Learning",
     description: "Cutting-edge AI-powered salary prediction engine using sophisticated machine learning algorithms to analyze experience, skills, location, and market trends. Built with TensorFlow for enterprise-grade accuracy and insights.",
     tech: ["Advanced Python", "TensorFlow", "Machine Learning", "Data Science", "Predictive Analytics"],
