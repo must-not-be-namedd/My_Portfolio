@@ -656,6 +656,30 @@ body {
   overflow: hidden;
 }
 
+.project-thumbnail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  padding: 20px;
+  color: white;
+}
+
+.project-overlay .project-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
 .project-gradient {
   position: absolute;
   inset: 0;

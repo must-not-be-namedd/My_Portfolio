@@ -18,37 +18,40 @@ const techStackData = [
 const projectsData = [
   {
     id: 1,
-    title: "CampusPlacify, a Custom Web/Mobile Application designed to streamline campus placement tracking and student readiness",
+    title: "CampusPlacify",
     category: "Full-Stack Analytics Platform",
     description: "Innovative And The One-And-Only Placement Tracking System With Real-Time Analytics Dashboards, company visit statistics, and student placement insights. Built with modern full-stack architecture featuring client-server separation and shared components.",
     tech: ["Frontend: React/Vite", "Backend: Node.js/Express", "Database: PostgreSQL", "Analytics Dashboard", "Real-time Data"],
     liveLink: "https://must-not-be-namedd.github.io/MyBMSPlacementTracker/",
     githubLink: "https://github.com/must-not-be-namedd/MyBMSPlacementTracker",
     icon: "trending-up",
+    thumbnail: "attached_assets/image_1753629007172.png",
     gradientFrom: "from-orange-500",
     gradientTo: "to-red-500"
   },
   {
     id: 2,
-    title: "The Official Protocol Website",
+    title: "Protocol Website",
     category: "Modern Web Development",
     description: "Stunning official website for Protocol Club BMSCE with sleek modern design, dynamic event management system, interactive member engagement features, and fully responsive UI that adapts beautifully across all devices.",
     tech: ["HTML/HTML5", "CSS", "Interactive JS", "Responsive Design", "Event Management"],
     liveLink: "https://must-not-be-namedd.github.io/proto_website/",
     githubLink: "https://github.com/must-not-be-namedd/proto_website",
     icon: "code",
+    thumbnail: "attached_assets/image_1753629108328.png",
     gradientFrom: "from-blue-500",
     gradientTo: "to-purple-500"
   },
   {
     id: 3,
-    title: "PayScale AI – Intelligent Salary Forecasting Engine Using Machine Learning and Market Insights",
+    title: "PayScale AI",
     category: "Advanced Machine Learning",
     description: "Cutting-edge AI-powered salary prediction engine using sophisticated machine learning algorithms to analyze experience, skills, location, and market trends. Built with TensorFlow for enterprise-grade accuracy and insights.",
     tech: ["Advanced Python", "TensorFlow", "Machine Learning", "Data Science", "Predictive Analytics"],
     liveLink: "https://www.linkedin.com/posts/khushi-nataraj-28npk12_streamlit-pythonfordatascience-interactiveapps-activity-7304370947954749440-wyjW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEarnC8BRSG7CqHFtPGH7Bs59d5AU_lnJ-M",
     githubLink: "https://github.com/must-not-be-namedd/ml_SalaryPrediction",
     icon: "trending-up",
+    thumbnail: "attached_assets/image_1753629299293.png",
     gradientFrom: "from-green-500",
     gradientTo: "to-cyan-500"
   },
@@ -61,6 +64,7 @@ const projectsData = [
     liveLink: "https://must-not-be-namedd.github.io/message-mingle-magic/",
     githubLink: "https://github.com/must-not-be-namedd/message-mingle-magic",
     icon: "smartphone",
+    thumbnail: "attached_assets/image_1753629419605.png",
     gradientFrom: "from-purple-500",
     gradientTo: "to-pink-500"
   },
@@ -73,6 +77,7 @@ const projectsData = [
     liveLink: "https://must-not-be-namedd.github.io/FULL_STACK/",
     githubLink: "https://github.com/must-not-be-namedd/FULL_STACK",
     icon: "database",
+    thumbnail: "attached_assets/image_1753629510941.png",
     gradientFrom: "from-indigo-500",
     gradientTo: "to-blue-500"
   }
@@ -431,18 +436,10 @@ function initProjectsSection() {
           <span class="text-yellow">main.tsx</span>
         </div>
         <div class="project-thumbnail">
-          <div class="project-gradient" style="background: linear-gradient(135deg, ${project.gradientFrom.replace('from-', '#')}, ${project.gradientTo.replace('to-', '#')});"></div>
-          <div class="project-icon-container">
-            <div class="project-icon-wrapper">
-              <div class="project-icon" style="background: linear-gradient(135deg, ${project.gradientFrom.replace('from-', '#')}, ${project.gradientTo.replace('to-', '#')});">
-                ${getIcon(project.icon)}
-              </div>
-              <div class="project-status">
-                <div class="project-status-dot"></div>
-              </div>
-              <h3 class="project-title">${project.title}</h3>
-              <p class="project-category">${project.category}</p>
-            </div>
+          <img src="${project.thumbnail}" alt="${project.title}" class="project-thumbnail-image" />
+          <div class="project-overlay">
+            <h3 class="project-title">${project.title}</h3>
+          </div>
           </div>
           <div class="project-code">
             <div class="project-code-line">
