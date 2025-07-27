@@ -440,17 +440,6 @@ function initProjectsSection() {
           <div class="project-overlay">
             <h3 class="project-title">${project.title}</h3>
           </div>
-          </div>
-          <div class="project-code">
-            <div class="project-code-line">
-              <span style="color: #6b7280;">1</span>
-              <span style="color: #3b82f6;">export</span>
-              <span style="color: #f59e0b;">default</span>
-              <span style="color: #ffffff;">function</span>
-              <span style="color: #10b981;">${project.title.replace(/\s+/g, '')}()</span>
-              <span style="color: #ffffff;">{</span>
-            </div>
-          </div>
         </div>
         <div class="project-content">
           <p class="project-description">${project.description}</p>

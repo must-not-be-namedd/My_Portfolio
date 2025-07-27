@@ -650,16 +650,18 @@ body {
 }
 
 .project-thumbnail {
-  height: 16rem;
+  height: 20rem;
   background: #1a1a2e;
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .project-thumbnail-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   border-radius: 8px;
 }
 
@@ -678,6 +680,7 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 
 .project-gradient {
