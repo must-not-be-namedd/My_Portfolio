@@ -25,7 +25,7 @@ const projectsData = [
     liveLink: "https://must-not-be-namedd.github.io/MyBMSPlacementTracker/",
     githubLink: "https://github.com/must-not-be-namedd/MyBMSPlacementTracker",
     icon: "trending-up",
-    thumbnail: "attached_assets/image_1753629007172.png",
+    thumbnail: "attached_assets/image_1753691853482.png",
     gradientFrom: "from-orange-500",
     gradientTo: "to-red-500"
   },
@@ -38,7 +38,7 @@ const projectsData = [
     liveLink: "https://must-not-be-namedd.github.io/proto_website/",
     githubLink: "https://github.com/must-not-be-namedd/proto_website",
     icon: "code",
-    thumbnail: "attached_assets/image_1753629108328.png",
+    thumbnail: "attached_assets/image_1753691926034.png",
     gradientFrom: "from-blue-500",
     gradientTo: "to-purple-500"
   },
