@@ -32,9 +32,9 @@ const projectsData = [
   {
     id: 2,
     title: "Protocol Website",
-    category: "Modern Web Development",
-    description: "Stunning official website for Protocol Club BMSCE with sleek modern design, dynamic event management system, interactive member engagement features, and fully responsive UI that adapts beautifully across all devices.",
-    tech: ["HTML/HTML5", "CSS", "Interactive JS", "Responsive Design", "Event Management"],
+    category: "Modern Web Development", 
+    description: "Stunning unofficial website for Protocol Club BMSCE with sleek modern design, interactive member engagement features, and fully responsive UI that adapts beautifully across all devices.",
+    tech: ["HTML/HTML5", "CSS", "Interactive JS", "Responsive Design"],
     liveLink: "https://must-not-be-namedd.github.io/proto_website/",
     githubLink: "https://github.com/must-not-be-namedd/proto_website",
     icon: "code",
@@ -86,8 +86,8 @@ const projectsData = [
 const achievementsData = [
   {
     id: 1,
-    title: "CGPA: 9.83",
-    description: "Grateful to maintain consistent academic performance throughout my engineering program with focus on core CS subjects",
+    title: "CGPA: 9.73",
+    description: "Grateful To Maintain Consistent Academic Performance Throughout My Engineering Program With Focus On Core CS Subjects.",
     year: "",
     category: "Academic Excellence",
     color: "text-yellow",
@@ -96,25 +96,25 @@ const achievementsData = [
   {
     id: 2,
     title: "Data Structures & Algorithms",
-    description: "Continuously learning DSA with practical implementation experience and problem-solving practice",
+    description: "Continuously Learning DSA With Practical Implementation Experience And Problem-Solving Practice.",
     year: "",
-    category: "Technical Ability - Well versed",
+    category: "Technical Ability - Well Versed",
     color: "text-green",
     icon: "🧮"
   },
   {
     id: 3,
     title: "Full Stack Development",
-    description: "Learning both frontend and backend technologies with personal project implementations",
+    description: "Learning Both Frontend And Backend Technologies With Personal Project Implementations.",
     year: "",
-    category: "Development Skills - Well versed",
+    category: "Development Skills - Well Versed",
     color: "text-purple",
     icon: "💻"
   },
   {
     id: 4,
     title: "AI/ML Project Implementation",
-    description: "Exploring machine learning concepts and building projects using TensorFlow and Python",
+    description: "Exploring Machine Learning Concepts And Building Projects Using TensorFlow And Python.",
     year: "",
     category: "Artificial Intelligence - Apprentice",
     color: "text-orange",
@@ -123,7 +123,7 @@ const achievementsData = [
   {
     id: 5,
     title: "Open Source Contributions",
-    description: "Contributing to open source projects and sharing code through GitHub repositories",
+    description: "Contributing To Open Source Projects And Sharing Code Through GitHub Repositories.",
     year: "",
     category: "Community Involvement",
     color: "text-cyan",
@@ -132,7 +132,7 @@ const achievementsData = [
   {
     id: 6,
     title: "Leadership & Team Collaboration",
-    description: "Learning leadership skills through student projects and collaborative development experiences",
+    description: "Learning Leadership Skills Through Student Projects And Collaborative Development Experiences.",
     year: "",
     category: "Soft Skills",
     color: "text-purple",
@@ -246,7 +246,7 @@ function initNavigation() {
 async function initTerminal() {
   const terminalLines = document.getElementById('terminal-lines');
   const achievementSummary = {
-    academic: "CGPA 9.83",
+    academic: "CGPA 9.73",
     technical: "DSA, Full Stack, AI/ML ,Android/iOS App Dev- continuous learning",
     projects: " BMSCE Placement Portal, Schrödinger's Chat-An Enhanced Whatsapp, The Official Protocol Website",
     values: "Humble, dedicated, and genuine growth"
@@ -319,7 +319,7 @@ function initSkillsSection() {
       if (entry.isIntersecting) {
         typeText(skillsTyping, '// skills.loadTechStack()', 50);
         setTimeout(() => {
-          typeText(skillsSubtitleTyping, 'Ranked by proficiency and experience • Updated daily', 40);
+          typeText(skillsSubtitleTyping, '', 40);
         }, 1000);
         
         // Render tech stack
@@ -384,7 +384,7 @@ function initProjectsSection() {
       if (entry.isIntersecting) {
         typeText(projectsTyping, '// projects.showcase()', 50);
         setTimeout(() => {
-          typeText(projectsSubtitleTyping, 'Built with passion and modern tech stack', 40);
+          typeText(projectsSubtitleTyping, '', 40);
         }, 1000);
         
         // Render projects
@@ -587,7 +587,7 @@ window.addEventListener('load', () => {
 });
 
 const achievementSummary = {
-  academic: "CGPA 9.83",
+  academic: "CGPA 9.73",
   technical: "DSA, Full Stack, AI/ML ,Android/iOS App Dev- continuous learning",
   projects: " BMSCE Placement Portal, Schrödinger's Chat-An Enhanced Whatsapp, The Official Protocol Website",
   values: "Humble, dedicated, and genuine growth"
