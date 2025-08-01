@@ -31,9 +31,9 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Protocol Website",
+    title: "Protocol \"Unofficial\" Website",
     category: "Modern Web Development", 
-    description: "Stunning unofficial website for Protocol Club BMSCE with sleek modern design, interactive member engagement features, and fully responsive UI that adapts beautifully across all devices.",
+    description: "I designed the initial prototype of this stunning website for Protocol Club BMSCE with sleek modern design, interactive member engagement features, and fully responsive UI that adapts beautifully across all devices.",
     tech: ["HTML/HTML5", "CSS", "Interactive JS", "Responsive Design"],
     liveLink: "https://must-not-be-namedd.github.io/proto_website/",
     githubLink: "https://github.com/must-not-be-namedd/proto_website",
