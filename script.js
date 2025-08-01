@@ -256,7 +256,7 @@ async function initTerminal() {
     { text: "$ whoami", type: "prompt" },
     { text: "Khushi-Nataraj", type: "output" },
     { text: "$ cat profile.txt", type: "prompt" },
-    { text: "Computer Science Engineering Student", type: "output" },
+    { text: "Computer Science Engineering Student at BMS College Of Engineering batch of 2027", type: "output" },
     { text: "$ cat achievements.js", type: "prompt" },
     { text: `academic: "${achievementSummary.academic}"`, type: "output" },
     { text: `technical: "${achievementSummary.technical}"`, type: "output" },
