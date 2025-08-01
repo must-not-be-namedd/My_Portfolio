@@ -1,6 +1,6 @@
 # Khushi Nataraj - Portfolio Website
 
-A modern, interactive portfolio website showcasing my Computer Science Engineering journey, projects, and skills.
+A modern, interactive portfolio website built with React, TypeScript, and Vite showcasing my Computer Science Engineering journey, projects, and skills.
 
 ## 🚀 Live Demo
 [View Live Portfolio](https://your-github-username.github.io/repository-name)
@@ -14,14 +14,18 @@ A modern, interactive portfolio website showcasing my Computer Science Engineeri
 - **Responsive Design**: Fully responsive across all devices
 - **Purple Theme**: Cool purple gradients and modern color scheme
 - **Terminal Aesthetics**: Colored terminal lines and programming-themed elements
+- **Modern Tech Stack**: Built with React, TypeScript, Vite, and Tailwind CSS
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Pure HTML5, CSS3, JavaScript (ES6+)
-- **Styling**: Custom CSS with modern animations and responsive design
-- **Fonts**: Inter font family for clean typography
-- **Icons**: Custom SVG icons for performance
-- **No Dependencies**: Zero external frameworks or libraries
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: Tailwind CSS with custom animations
+- **UI Components**: Radix UI components with shadcn/ui
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Routing**: Wouter for client-side routing
+- **State Management**: TanStack Query for server state
+- **Backend**: Express.js with TypeScript
 
 ## 📱 Sections
 
@@ -46,14 +50,78 @@ A modern, interactive portfolio website showcasing my Computer Science Engineeri
 - **Modern**: Clean, minimalist design with purple accent colors
 - **Professional**: Humble tone with focus on learning and growth
 
-## 🚀 GitHub Pages Deployment
+## 🚀 Quick Start
 
-This portfolio is optimized for GitHub Pages deployment:
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-1. Fork this repository
-2. Enable GitHub Pages in repository settings
-3. Select "Deploy from a branch" and choose `main` branch
-4. Your portfolio will be live at `https://your-username.github.io/repository-name`
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
+```
+
+## 🌐 Deployment Options
+
+### Option 1: Netlify Deployment
+
+1. **Connect to GitHub**:
+   - Go to [Netlify](https://netlify.com)
+   - Sign up/Login with your GitHub account
+   - Click "New site from Git"
+
+2. **Configure Build Settings**:
+   - Repository: Select your portfolio repository
+   - Branch: `main`
+   - Build command: `npm run build`
+   - Publish directory: `dist/public`
+
+3. **Deploy**:
+   - Click "Deploy site"
+   - Your site will be live at `https://your-site-name.netlify.app`
+
+### Option 2: Vercel Deployment
+
+1. **Connect to GitHub**:
+   - Go to [Vercel](https://vercel.com)
+   - Sign up/Login with your GitHub account
+   - Click "New Project"
+
+2. **Import Repository**:
+   - Select your portfolio repository
+   - Vercel will auto-detect the Vite configuration
+
+3. **Deploy**:
+   - Click "Deploy"
+   - Your site will be live at `https://your-project-name.vercel.app`
+
+### Option 3: GitHub Pages Deployment
+
+1. **Enable GitHub Pages**:
+   - Go to your repository settings
+   - Navigate to "Pages" section
+   - Source: "Deploy from a branch"
+   - Branch: `main` or `gh-pages`
+
+2. **Build and Deploy**:
+   ```bash
+   npm run build
+   # Upload dist/public contents to your repository
+   ```
 
 ## 📧 Contact
 
