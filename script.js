@@ -87,7 +87,7 @@ const achievementsData = [
   {
     id: 1,
     title: "CGPA: 9.73",
-    description: "Grateful To Maintain Consistent Academic Performance Throughout My Engineering Program With Focus On Core CS Subjects.",
+    description: "Grateful to maintain consistent academic performance throughout my engineering program with focus on core CS subjects.",
     year: "",
     category: "Academic Excellence",
     color: "text-yellow",
@@ -96,7 +96,7 @@ const achievementsData = [
   {
     id: 2,
     title: "Data Structures & Algorithms",
-    description: "Continuously Learning DSA With Practical Implementation Experience And Problem-Solving Practice.",
+    description: "Continuously learning DSA with practical implementation experience and problem-solving practice.",
     year: "",
     category: "Technical Ability - Well Versed",
     color: "text-green",
@@ -105,7 +105,7 @@ const achievementsData = [
   {
     id: 3,
     title: "Full Stack Development",
-    description: "Learning Both Frontend And Backend Technologies With Personal Project Implementations.",
+    description: "Learning both frontend and backend technologies with personal project implementations.",
     year: "",
     category: "Development Skills - Well Versed",
     color: "text-purple",
@@ -114,7 +114,7 @@ const achievementsData = [
   {
     id: 4,
     title: "AI/ML Project Implementation",
-    description: "Exploring Machine Learning Concepts And Building Projects Using TensorFlow And Python.",
+    description: "Exploring machine learning concepts and building projects using TensorFlow and Python.",
     year: "",
     category: "Artificial Intelligence - Apprentice",
     color: "text-orange",
@@ -123,7 +123,7 @@ const achievementsData = [
   {
     id: 5,
     title: "Open Source Contributions",
-    description: "Contributing To Open Source Projects And Sharing Code Through GitHub Repositories.",
+    description: "Contributing to open source projects and sharing code through GitHub repositories.",
     year: "",
     category: "Community Involvement",
     color: "text-cyan",
@@ -132,7 +132,7 @@ const achievementsData = [
   {
     id: 6,
     title: "Leadership & Team Collaboration",
-    description: "Learning Leadership Skills Through Student Projects And Collaborative Development Experiences.",
+    description: "Learning leadership skills through student projects and collaborative development experiences.",
     year: "",
     category: "Soft Skills",
     color: "text-purple",
@@ -258,10 +258,10 @@ async function initTerminal() {
     { text: "$ cat profile.txt", type: "prompt" },
     { text: "Computer Science Engineering Student at BMS College Of Engineering, Batch of 2027.", type: "output" },
     { text: "$ cat achievements.js", type: "prompt" },
-    { text: `academic: "${achievementSummary.academic}"`, type: "output" },
-    { text: `technical: "${achievementSummary.technical}"`, type: "output" },
+    { text: `Academic: "CGPA 9.73"`, type: "output" },
+    { text: `Technical: "DSA, Full Stack, AI/ML ,Android/iOS App Dev."`, type: "output" },
     { text: "$ ls skills/", type: "prompt" },
-    { text: "python/ javascript/ react/ tensorflow/ mern-stack/", type: "output" },
+    { text: "Python/ Javascript/ React/ Tensorflow/ Mern-Stack/", type: "output" },
     { text: "$ ./start_portfolio.sh", type: "prompt" },
     { text: "Loading portfolio... ✓", type: "output" },
     { text: "Welcome to my digital space! 🚀", type: "output" }
@@ -483,7 +483,7 @@ function initAchievementsSection() {
       if (entry.isIntersecting) {
         typeText(achievementsTyping, '// achievements.loadMilestones()', 50);
         setTimeout(() => {
-          typeText(achievementsSubtitleTyping, 'Key accomplishments that showcase my growth and dedication', 40);
+          typeText(achievementsSubtitleTyping, 'On a never-ending quest to master DSA and problem-solving — because let\'s be real, it\'s a game that never truly ends.', 40);
         }, 1000);
         
         // Render achievements
