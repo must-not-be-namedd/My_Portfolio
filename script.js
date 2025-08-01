@@ -61,7 +61,7 @@ const projectsData = [
     category: "Innovative and the one-and-only Messaging Platform",
     description: "Quantum-enhanced WhatsApp with mind-blowing features: Time-Travel Search, AI Image Generator, Smart Translator, Quantum Mode messaging, Anti-Ghost Mode, OptiMeet Scheduler, AI Assistant, and Media Manager. Experience the future of communication!",
     tech: ["Frontend: React/Next.js", "Backend: Node.js/WebSocket", "Database: MongoDB", "AI Integration", "Real-time Features"],
-    liveLink: "https://must-not-be-namedd.github.io/message-mingle-magic/",
+    liveLink: "https://schrodingerschat.netlify.app/",
     githubLink: "https://github.com/must-not-be-namedd/message-mingle-magic",
     icon: "smartphone",
     thumbnail: "attached_assets/image_1753629419605.png",
@@ -254,7 +254,7 @@ async function initTerminal() {
 
   const steps = [
     { text: "$ whoami", type: "prompt" },
-    { text: "khushi-nataraj", type: "output" },
+    { text: "Khushi-Nataraj", type: "output" },
     { text: "$ cat profile.txt", type: "prompt" },
     { text: "Computer Science Engineering Student", type: "output" },
     { text: "$ cat achievements.js", type: "prompt" },
