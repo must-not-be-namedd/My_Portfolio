@@ -5,12 +5,11 @@
 [build.environment]
   NODE_VERSION = "18"
 
-# Handle client-side routing
+# Handle client-side routing - this is the most important part
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  force = true
 
 # Handle static assets
 [[headers]]
